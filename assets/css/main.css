@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.active {
+  color: #ffffffc0;
+  text-decoration: underline;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Header Section  */
+header {
+  background-color: teal;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Header -Logo- Section */
+header .logo {
+  display: flex;
+  align-items: center;
+}
+
+header .logo img {
+  width: 90px;
+}
+
+/* Header -Navbar- Section */
+header nav ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 80px;
+  margin-right: 50px;
+  font-size: 18px;
+}
+
+header nav ul li {
+  position: relative;
+}
+header nav ul li a {
+  color: #12346fe0;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+}
+
+header nav ul li a:hover {
+  color: #ffffffc0;
+}
+header nav ul li a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #ffffff96;
+  left: 50%;
+  bottom: -5px;
+  transition: all 0.3s ease-in-out;
+}
+header nav ul li:hover a::after {
+  width: 100%;
+  left: 0;
+}
+
+/* Header -Authintication- Section */
+header .auth {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+header .auth a {
+  color: #12346fe0;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  box-shadow: #ffffff 0px 0px 5px 0px;
+}
+
+header .auth .login {
+  background-color: #ffffffc0;
+  color: #000000;
+}
+
+header .auth .register {
+  background-color: #12346fe0;
+  color: #ffffffc0;
+}
+
+header .auth .register:hover {
+  color: #000000;
+}
+
+header .auth a:hover {
+  box-shadow: #ffffff 0px 0px 10px 0px;
+}
