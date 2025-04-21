@@ -41,7 +41,7 @@ header {
   z-index: 10;
 }
 
-header .content {
+.content {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -134,4 +134,120 @@ header .auth .register:hover {
 
 header .auth a:hover {
   box-shadow: #ffffff 0px 0px 10px 0px;
+}
+
+/* main Section */
+
+main {
+  padding: 50px 0;
+  background-color: #f5f5f5;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+/* Footer Section */
+
+.footer {
+  background-color: #12346fe0;
+  color: #f0f8ffd4;
+  padding: 15px 0;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 10px;
+}
+
+.footer .footer-start {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer .footer-start .footer-logo {
+  display: flex;
+  align-items: center;
+}
+
+.footer .footer-start .footer-logo img {
+  width: 90px;
+  height: auto;
+  margin-right: -10px;
+}
+
+.footer .footer-start .footer-logo a {
+  font-size: 15px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.footer .footer-start p {
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-top: -20px;
+  width: 80%;
+}
+
+.footer .footer-start .social-icons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.footer .footer-start .social-icons i {
+  border: 2px solid #ffffff;
+  padding: 4px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.footer .footer-end ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+}
+
+.footer .footer-end ul li h2 {
+  font-size: 20px;
+  color: #0a9f66f5;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.footer .footer-end ul li ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.footer .footer-end ul li ul li {
+  font-size: 14px;
+  /* color: #12346fe0; */
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.footer .footer-end ul li ul li a {
+  color: #ffffff;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.footer .footer-end ul li ul li a:hover {
+  color: #069d68c0;
 }
